@@ -1,0 +1,27 @@
+{
+  "name": "deepspace",
+  "version": "1.0.0",
+  "description": "CSS-only deep-space planet scene for FSCSS - scoped container or body",
+  "extension": "fscss",
+  "fscss_version": "^1.2.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fscss-ttr/deepspace.fscss"
+  },
+  "file": {
+    "usage": {
+      "directive": "deepspace",
+      "helpers": [
+        "deepspace-root",
+        "deepspace-size",
+        "deepspace",
+        "deepspace-as-body"
+      ]
+    },
+    "modules": ["./deepspace.fscss"],
+    "remote": "./deepspace.fscss"
+  },
+  "keywords": ["fscss", "css-art", "planet", "space", "animation", "module"],
+  "license": "MIT",
+  "author": "FSCSS-TTR"
+}
