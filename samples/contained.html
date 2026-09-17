@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>deepspace | contained</title>
+  <script src="https://cdn.jsdelivr.net/npm/fscss@1.2.1/runtime.min.js" defer></script>
+  <style>
+    @import((*) from deepspace)
+
+    @deepspace-root()
+    @deepspace(.scene)
+    :root{
+    @deepspace-size(200px)
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background: #111;
+      font-family: system-ui, sans-serif;
+      color: #ccc;
+    }
+    main { width: min(420px, 92vw); }
+    h1 { font-size: 1rem; margin: 0 0 12px; font-weight: 600; }
+    .scene {
+      height: 380px;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    p { 
+      font-size: 13px; color: #888; margin: 12px 0 0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>deepspace.fscss contained</h1>
+    <div class="scene">
+      <div class="ds-rays"></div>
+      <div class="ds-planet-system">
+        <div class="ds-atmosphere"></div>
+        <div class="ds-planet"></div>
+        <div class="ds-moon-orbit"><div class="ds-moon"></div></div>
+      </div>
+      <div class="ds-title">Deep Space</div>
+    </div>
+    <p>Overflow stays inside <code>.scene</code> - body is unaffected.</p>
+  </main>
+</body>
+</html>
